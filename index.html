@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B Karthik Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            padding-top: 80px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #1e90ff;
+            flex-wrap: wrap;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav .left {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: gold;
+        }
+
+        section {
+            padding: 60px 10%;
+            scroll-margin-top: 100px;
+        }
+
+        .firstSection {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .firstSection img {
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .highlight {
+            color: #ff4500;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .vertical {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .vertical-title {
+            font-weight: bold;
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        .vertical-desc {
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #about img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .image-top {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        #skills {
+            padding: 60px 10%;
+            background-color: #f9f9f9;
+            scroll-margin-top: 100px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .skill-box {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 1rem;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .skill-box:hover {
+            background-color: #104e8b;
+            cursor: default;
+        }
+
+        @media (min-width: 768px) {
+            .about-content {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            #about img {
+                margin: 0;
+                max-width: 350px;
+                flex-shrink: 0;
+            }
+
+            #about p {
+                max-width: 700px;
+                margin-left: 40px;
+                text-align: left;
+            }
+
+            .firstSection {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+
+            .leftSection {
+                font-size: 2.5rem;
+            }
+
+            .firstSection img {
+                max-width: 400px;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">B Karthik</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="firstSection" id="home">
+        <div class="leftSection">
+            Hi, I am <span class="highlight">B Karthik</span>.<br>
+            <span class="highlight">Full Stack Java devloper & Tech Enthusiast</span>
+        </div>
+        <div>
+            <img src="bg.png" alt="Profile Image" />
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="section-title">About Me</h1>
+        <div class="about-content">
+            <img src="image.jpg" alt="About Image" />
+            <p>
+                I am a self-motivated individual with a strong drive to learn and improve. My professional journey includes experience in automobile sales and a keen interest in technology. I believe in making things happen and continuously adapting to change.
+            </p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h1 class="section-title">Work Experience</h1>
+        <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="developer.png" alt="Work Icon" />
+                <div>
+                    <span class="vertical-title">Sales Executive - JSP Cars Pvt Ltd</span>
+                    <div class="vertical-desc">Working since 2021 in Jubilee Hills, Hyderabad. Responsible for car sales, customer relationship management, and post-sale service.</div>
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="developer.png" alt="Work Icon" />
+                <div>
+                    <span class="vertical-title">Sales Executive - Srinidhi Suzuki</span>
+                    <div class="vertical-desc">Worked from 2019 to 2020 at Jagathgirigutta, Hyderabad. Gained experience in retail vehicle sales and team coordination.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1 class="section-title">Skills</h1>
+        <div class="skills-container">
+            <div class="skill-box">Java</div>
+            <div class="skill-box">DevOps</div>
+            <div class="skill-box">Git & GitHub</div>
+            <div class="skill-box">Linux</div>
+            <div class="skill-box">Spring Boot</div>
+            <div class="skill-box">HTML & CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">REST APIs</div>
+            <div class="skill-box">MySQL</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: bisaikarthik32801@gmail.com</p>
+        <p>Phone: +91 9100384969</p>
+        <p>Location: Moosapet, Hyderabad, TG - 500018</p>
+    </section>
+</body>
+
+</html>
